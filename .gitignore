@@ -2,7 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-
+*.impl
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -32,3 +32,9 @@ bin/
 /.idea/modules.xml
 /MyExample.iml
 /.idea/vcs.xml
+
+.ai
+/.idea/uiDesigner.xml
+/.idea/
+/untitled/
+/Module2/
