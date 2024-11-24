@@ -1,6 +1,6 @@
 package abc;
 
-public class C extends B  {
+public class C extends B {
     static {
         System.out.print("7");
     }
@@ -9,7 +9,7 @@ public class C extends B  {
         System.out.print("8");
     }
 
-    C(){
+    C() {
         super("Hello");
         System.out.print("9");
     }

@@ -5,11 +5,11 @@ public class A {
         System.out.print("1");
     }
 
-    A(){
+    A() {
         System.out.print("2");
     }
 
-    A(String str){
+    A(String str) {
         this();
         System.out.print("3");
     }

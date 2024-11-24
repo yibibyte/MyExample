@@ -5,11 +5,11 @@ public class B extends A {
         System.out.print("4");
     }
 
-    B(){
+    B() {
         System.out.print("5");
     }
 
-    B(String str){
+    B(String str) {
         this();
         System.out.println("6");
     }
