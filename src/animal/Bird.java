@@ -1,7 +1,8 @@
 package animal;
 
-public class Bird extends Animal {
-    private String name ="";
+public class Bird extends Animal implements IFlyable{
+
+    private String name ="Орел";
     private int age;
 
     // Конструктор
@@ -19,5 +20,10 @@ public class Bird extends Animal {
     // Новый метод для получения типа птицы
     public String getName() {
         return name;
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Летаю");
     }
 }

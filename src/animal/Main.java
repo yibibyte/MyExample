@@ -29,5 +29,37 @@ public class Main {
         bird.makeSound();
         System.out.println(bird.getName());
         System.out.println(bird.getAge());
+
+    // AbstractAnimal animalAnimals = new AbstractAnimal();
+
+        AbstractAnimal animalAnimal = new Dog("Полкан");
+
+        MakeVoice voice = new Dog();
+        voice.makeSound();
+        animalAnimal.walk(); // Упаковка объекта Dog в переменную типа Animal
+        animalAnimal.play();
+
+        // Создаем экземпляры конкретных классов
+        Dog dog3 = new Dog("Шарик");
+        Cat cat2 = new Cat("Мурка");
+
+        // Upcasting: Преобразовываем объект конкретного класса к типу родительского класса или интерфейсу
+        //Animal animalCat = cat2; // Упаковка объекта Cat в переменную типа Animal
+
+        // Полиморфизм: вызываем метод у объектов разного типа через общий интерфейс
+        animalAnimal.introduce(); // Выводит "Гав!"
+        animal2.makeSound(); // Выводит "Мяу!"
+
+        // Downcasting: Преобразовываем обратно к конкретному типу
+        if (animalAnimal instanceof Dog) { // Проверяем, является ли объект объектом класса Dog
+            Dog downcastedDog = (Dog) animalAnimal; // Приведение к типу Dog
+            downcastedDog.introduce(); // Выводит "Привет! Я Шарик"
+        }
+
+//        if (animal2 instanceof Cat) { // Проверяем, является ли объект объектом класса Cat
+//            Cat downcastedCat = (Cat) animal2; // Приведение к типу Cat
+//            downcastedCat.introduce(); // Выводит "Привет! Я Мурка"
+//        }
+
     }
 }

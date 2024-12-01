@@ -1,5 +1,5 @@
 package animal;
 
 public interface MakeVoice {
-    public void makeSound();
+    void makeSound();
 }

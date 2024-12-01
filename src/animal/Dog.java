@@ -1,8 +1,18 @@
 package animal;
 
 public class Dog extends AbstractAnimal implements Swimmable, Movable, MakeVoice {
+
+    public String name = "Собакин";
+    public Dog() {
+        super();
+    }
+    public Dog(String name) {
+        super();
+    }
+
     @Override
     public void speak() {
+        System.out.println("Dog is speaking");
     }
 
     @Override
@@ -26,6 +36,6 @@ public class Dog extends AbstractAnimal implements Swimmable, Movable, MakeVoice
 
     @Override
     public void makeSound() {
-        System.out.println("Dog is making sound from Interface MakeVoice");
+        System.out.println("Гав! из Interface MakeVoice");
     }
 }
